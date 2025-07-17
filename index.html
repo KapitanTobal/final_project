@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aristotle's Portal Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+    <div id="header"></div>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/IMG_5254.jpg" alt="Couple's background">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Aristotle's Portal Page</h1>
+                <h4>Turn moments into timeless memories</h4>
+            </section>
+        </div>
+
+        <main>
+            <div id="wwr">
+                <a href="wwr/index.html" target="_blank">
+                    <img src="images/rapids.jpg" alt="White Water Rafting">
+                    <h4>White Water Rafting</h4>
+                </a>
+            </div>
+            <div id="ice">
+                <a href="ice/index.html">
+                    <img src="images/Screenshot 2025-05-27 at 1.54.26 PM.png" alt="ICE">
+                    <h4>In Class Exercises</h4>
+                </a>
+            </div>  
+        </main>
+        <div id="aboutme-container">
+            <div>
+                <img id="prof-pic" src="images/IMG_6723.JPG" alt="Aristotle Cristobal" class="profile-pic">
+            </div>
+            <div id="about-me-box">
+                <h2>About Me</h2>
+                <p>Hi, I'm Aristotle Cristobal, a student at the Brigham Young University - Idaho.</p>
+                <p> I am Computer Science Major. This portal page serves as a hub for my projects and interests.</p>
+                <p>To know more about me click the button below!</p>
+                <a href="aboutme.html" class="button">About Me</a>
+            </div>
+        </div>
+   
+    </div>
+
+    <div id="footer"></div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

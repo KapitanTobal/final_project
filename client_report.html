@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Report</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="header"></div>
+    </div>
+        
+    <div id="Report">
+        <h1>Client Report</h1>
+
+    
+        <p>How did you decide what content and images to use for your site plan?</p>
+        <p>-Even before I want to make a portfolio for my photography hobby.</p>
+
+        <p>How did you communicate with your developer? Was there any issues with communication?</p>
+        <p>-I talked to him in person and through Microsoft Teams, There was no issues in communicating.</p>
+
+        <p>Did your developer meet your expectations for your site?</p>
+        <p>-Yes.</p>
+
+        <p>What will you do differently next time you hire a team to do a project for you?</p>
+        <p>-I'll be more specific un my wireframe and communicate more.</p>
+
+        
+        <h1>Lead Developer Report</h1>
+
+        <p>How did you manage your development team and comunicate the tasks for your junior devs?</p>
+        <p>-I tried to communicate with them in person and through Microsoft Teams</p>
+
+        <p>How did you communicate with your client? Was there any issues?</p>
+        <p>-In person and Through Microsoft Teams.</p>
+
+        <p>How did you handle publishing your clients site and sharing it with the client?</p>
+        <p>-Through GitHub and it's very easy. I just sent him the url.</p>
+
+        <p>How was your experience with managing your site with GitHub?</p>
+        <p>-Very good.</p>
+ 
+        
+        <h1>Junior Developer Report</h1>
+
+        <p>How did you communicate with your team lead? Was there any issues?</p>
+        <p>-Through email, yes they failed to communicate.</p>
+
+        <p>Did you know what was expected of you for each site?</p>
+        <p>-Nope, they said that they'll send us what we need to do, but didn't bother to do it.</p>
+
+        <p>Were you able to contribute to your sites?</p>
+        <p>-I tried, but there was no clear communication.</p>
+
+        <p>Did you run into any issues with GitHub and adding your changes to the sites?</p>
+        <p>-none.</p>
+
+        
+        <h1>General Experience and Reflections</h1>
+
+        <p>What was the most challenging part of this project for you? Were you able to overcome it?</p>
+        <p>-Communating with my lead developers. Nope.</p>
+
+        <p>What did you enjoy most about this project?</p>
+        <p>-Doing most of the HTML and CSS.</p>
+
+        <p>What would you do differently if you could do the project again?</p>
+        <p>-I think i'll focus more adn communicagte well with my team and client.</p>
+
+        <p>Do you feel more confident in working on real-world projects after this experience? Explain.</p>
+        <p>-Yes, I feel like I can do more projects in the future.</p>
+    </div>
+
+    <div id="footer"></div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

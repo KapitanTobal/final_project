@@ -1,0 +1,200 @@
+
+body {
+    background: #ced0c7;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#logo_link img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Helvetica";
+    height: 40px;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #ced0c7;
+}
+
+nav a:hover {
+    background-color: #ced0c7;
+    color: #2f4858;
+
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #ced0c7;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 10px;
+    margin: 0;
+  }
+  
+.dropdown:hover .dropbtn {
+    background-color: #ced0c7;
+    color: #2f4858;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+header{
+    background-color: #2f4858;
+}
+.ice h1 {
+    font-family: "Helvetica";
+    color: #ced0c7;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+.ice a {
+    color: #ced0c7;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-family: "Helvetica";
+}
+
+.ice a:hover {
+    background-color: #ced0c7;
+    color: #2f4858;
+    border-radius: 10px;
+}
+.ice {
+    background-color: #2f4858;
+    border: 5px #2f4858 solid;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 5px 5px #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    padding: 10px;
+    font-family: "Helvetica";
+    font-size: 20px;
+    color: #2f4858;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #2f4858;
+    color: #ced0c7;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Helvetica";
+    height: 20px;
+}
+
+footer a {
+    color: #ced0c7;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 10px;
+}
+
+footer img {
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 25px;
+}
+
+footer a:hover {
+    background-color: #ced0c7;
+    color: #2f4858;
+}
+
+.social a:hover {
+    background-color: #2f4858;
+    color: #ced0c7;
+    padding: auto; ;
+}
+
+
+.dropbtn {
+    background-color: #2f4858;
+    color: #ced0c7;
+    padding: 14px 16px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropup:hover .dropup-content {
+    display: block;
+}
+.dropup:hover .dropbtn {
+    background-color: #ced0c7;
+    color: #2f4858;
+}

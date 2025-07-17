@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+        <table class="blueTable">
+          <thead>
+          <tr>
+          <th>Speaker</th>
+          <th>Title</th>
+          <th>Location</th>
+          <th>Year</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>Sister Jennifer E. Meredith</td><td>The Great Plan of Happiness</td><td>BYU-Idaho</td><td>2025</td></tr>
+          <tr>
+          <td>Elder Ulisses Soares</td><td>Drawing Strength from the Savior’s Love</td><td>BYU-Idaho</td><td>2025</td></tr>
+          <tr>
+          <td>Elder Kevin G. Brown</td><td>Hastening the Work in You</td><td>BYU-Idaho</td><td>2025</td></tr>
+          </tbody>
+          </tr>
+          </table>
+          <h2>Add a new speaker</h2>
+
+          <div class="table"r>
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="speaker">Speaker</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="speaker" placeholder="Speaker name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="title">Title</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="title" placeholder="Title of the talk..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="location">Location</label>
+                </div>
+                <div class="col-75">
+                  <select id="location" name="location" placeholder="Select a location..">
+                    <option value="byu_idaho">BYU-Idaho</option>
+                    <option value="byu_provo">BYU-Provo</option>
+                    <option value="byu_hawaii">BYU-Hawaii</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="year">Year</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="year" placeholder="Year..">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+
+                </div>
+              </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
+<style>
+
+*{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.table {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 20px;
+  text-align: center;
+}
+
+table.blueTable thead th {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+  border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot td {
+  font-size: 11px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+</style>

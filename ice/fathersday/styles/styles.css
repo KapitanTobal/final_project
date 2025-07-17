@@ -1,0 +1,220 @@
+/* Reset & base */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../images/fathersday-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+/* Wrapper */
+#wrapper {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header/Nav */
+header {
+    background-color: #00539c;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;;
+    list-style: none;
+    gap: 100px;
+}
+
+nav li {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Trigger animation when hovered */
+nav li:hover {
+    animation: spin 1s linear infinite;
+    color: yellow;
+}
+
+/* Define the spinning keyframes */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Main content */
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+main img:hover {
+    animation: goCrazy 0.5s infinite ease-in-out;
+}
+
+@keyframes goCrazy {
+    0%   { transform: rotate(0deg) scale(1); }
+    25%  { transform: rotate(15deg) scale(1.1); }
+    50%  { transform: rotate(-15deg) scale(1.2); }
+    75%  { transform: rotate(15deg) scale(1.1); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0ff;
+    margin-bottom: 20px;
+    animation: bouncePump 1s ease-in-out infinite, neonGlow 1.5s ease-in-out infinite;
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff;
+    font-weight: bold;
+}
+
+/* Bouncy pump animation */
+@keyframes bouncePump {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+    50% {
+        text-shadow:
+            0 0 2px #0ff,
+            0 0 4px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff;
+    }
+}
+
+
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #908e8e;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+main h1:hover {
+    transform: scale(1.1);
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 5px solid #00539c;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+section:hover {
+    background-color: #eef6fc;
+}
+
+h2 {
+    color: #00539c;
+    margin-bottom: 10px;
+}
+
+/* Target the section and shake both h2 and p on hover */
+section:hover h2,
+section:hover p {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #00539c;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+body::before {
+    content: "";
+    background: url('../images/tie.png') no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    background: url('../images/mug.png') no-repeat;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: -1;
+}
